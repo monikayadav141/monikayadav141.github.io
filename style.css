@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
  body {
    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
    line-height: 1.6;
@@ -10,7 +22,8 @@
 .container {
    max-width: 960px;
    margin: 0 auto;
-   padding: 40px 20px;
+   padding: 32px 20px 48px 20px;
+   width: 100%;
 }
 .research-page .container {
   max-width: 1140px;
@@ -20,17 +33,27 @@
    margin-bottom: 60px;
  }
 
+ header nav {
+   display: flex;
+   justify-content: flex-end;
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 10px 10px 0 10px;
+ }
+
  header nav ul {
    list-style: none;
    padding: 0;
    margin: 0;
    display: flex;
    justify-content: flex-end;
-   /* Align nav to the right */
+   gap: 18px;
+   flex-wrap: wrap;
  }
 
  header nav ul li {
-   margin-left: 30px;
+   margin: 0;
  }
 
  header nav ul li a {
@@ -367,19 +390,93 @@ main {
    line-height: 1.7;
  }
 
- /* Responsive adjustments for Research Page */
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px 18px 44px 18px;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+  .container {
+    padding: 26px 16px 36px 16px;
+  }
+
+  header {
+    margin-bottom: 46px;
+  }
+
+  header nav {
+    justify-content: center;
+    padding-top: 6px;
+  }
+
+  header nav ul {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .home-image {
+    order: -1;
+  }
+
+  .home-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .home-content .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .page-intro {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+  }
+
   .project-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-   .modal-content {
-     width: 90%;
-     margin: 10% auto;
-     padding: 25px;
-   }
- }
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 14px;
+  }
+
+  .project-head h2 {
+    font-size: 1.05rem;
+  }
+
+  .project-summary {
+    font-size: 0.9rem;
+  }
+
+  header nav ul {
+    gap: 12px;
+  }
+
+  .modal-content {
+    width: 94%;
+    padding: 20px;
+  }
+
+  .placeholder-image {
+    height: 280px;
+    max-width: 320px;
+  }
+}
 
  .teaching-header {
    display: flex;
@@ -478,25 +575,4 @@ main {
    align-items: center;
    color: #999;
    border-radius: 4px;
- }
-
- /* Responsive Design */
- @media (max-width: 768px) {
-   .home-grid {
-     grid-template-columns: 1fr;
-     gap: 40px;
-   }
-
-   header nav ul {
-     justify-content: center;
-   }
-
-   header nav ul li {
-     margin: 0 10px;
-   }
-
-   .home-image {
-     order: -1;
-     /* Show image on top on mobile? Or keep bottom. Let's keep default for now, maybe change later if needed. */
-   }
  }
