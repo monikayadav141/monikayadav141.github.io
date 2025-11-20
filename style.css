@@ -7,11 +7,14 @@
    color: #333;
  }
 
- .container {
+.container {
    max-width: 960px;
    margin: 0 auto;
    padding: 40px 20px;
- }
+}
+.research-page .container {
+  max-width: 1140px;
+}
 
  header {
    margin-bottom: 60px;
@@ -169,6 +172,10 @@ main {
   align-items: stretch;
   max-width: 960px;
   margin: 0 auto;
+}
+.research-page .project-list {
+  max-width: 1040px;
+  gap: 22px;
 }
 
 .project-card {
