@@ -74,8 +74,8 @@ img {
 }
 
 .nav-links a:hover {
-  color: #0f62fe;
-  background: rgba(15, 98, 254, 0.08);
+  color: #7d1b2d;
+  background: rgba(125, 27, 45, 0.08);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
@@ -101,7 +101,7 @@ img {
 }
 
 .nav-toggle:focus-visible {
-  outline: 2px solid #0f62fe;
+  outline: 2px solid #7d1b2d;
   outline-offset: 3px;
 }
 
@@ -259,12 +259,12 @@ main {
 }
 
 .project-card {
-  background: linear-gradient(145deg, #f7faff 0%, #ffffff 65%);
-  border: 1px solid #e6edf7;
+  background: linear-gradient(145deg, #f9f3f5 0%, #ffffff 65%);
+  border: 1px solid #eadbe0;
   border-radius: 12px;
   padding: 18px 18px 16px 18px;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0, 32, 96, 0.06);
+  box-shadow: 0 6px 18px rgba(125, 27, 45, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -276,8 +276,8 @@ main {
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 24px rgba(0, 32, 96, 0.12);
-  border-color: #d7e5ff;
+  box-shadow: 0 14px 24px rgba(125, 27, 45, 0.12);
+  border-color: #d2b9c1;
 }
 
 .project-card::before {
@@ -287,8 +287,8 @@ main {
   left: 0;
   width: 6px;
   height: 100%;
-  background: linear-gradient(180deg, #1f5eff, #00a6ff);
-  opacity: 0.9;
+  background: linear-gradient(180deg, #7d1b2d, #a0384a);
+  opacity: 0.92;
 }
 
 .project-head h2 {
@@ -301,21 +301,21 @@ main {
 
 .project-meta {
   margin: 0 0 12px 0;
-  color: #52607a;
+  color: #5c4e55;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
 
 .project-summary {
-  color: #374151;
+  color: #3f3037;
   font-size: 0.95rem;
   line-height: 1.55;
   margin: 0 0 14px 0;
 }
 
 .read-more-btn {
-  background: #0f62fe;
+  background: #7d1b2d;
   color: #fff;
   border: none;
   padding: 10px 14px;
@@ -325,13 +325,13 @@ main {
   font-weight: 600;
   transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
   align-self: flex-start;
-  box-shadow: 0 8px 14px rgba(15, 98, 254, 0.25);
+  box-shadow: 0 8px 14px rgba(125, 27, 45, 0.2);
 }
 
 .read-more-btn:hover {
-  background: #0a4fc4;
+  background: #651523;
   transform: translateY(-1px);
-  box-shadow: 0 12px 18px rgba(15, 98, 254, 0.35);
+  box-shadow: 0 12px 18px rgba(125, 27, 45, 0.28);
 }
 
 .pill-row {
@@ -342,8 +342,8 @@ main {
 }
 
 .pill {
-  background: #eaf1ff;
-  color: #1b3d8f;
+  background: #f2e4e9;
+  color: #7d1b2d;
   border-radius: 999px;
   padding: 6px 10px;
   font-size: 0.8rem;
@@ -352,7 +352,7 @@ main {
 }
 
 .project-card:focus {
-  outline: 2px solid #0f62fe;
+  outline: 2px solid #7d1b2d;
   outline-offset: 4px;
 }
 
@@ -374,18 +374,18 @@ main {
   background-color: #fff;
   margin: 5% auto;
   padding: 40px;
-  border: 1px solid #dbe5f7;
+  border: 1px solid #e5d7dd;
   width: 80%;
   max-width: 700px;
   border-radius: 8px;
-  box-shadow: 0 16px 36px rgba(0, 32, 96, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
   position: relative;
   animation: fadeIn 0.3s;
 }
 
 .modal-content h2 {
   margin-top: 0;
-  color: #1b3d8f;
+  color: #7d1b2d;
 }
 
 @keyframes fadeIn {
