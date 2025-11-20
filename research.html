@@ -19,11 +19,12 @@
     </header>
     <main>
       <h1>Research Portfolio</h1>
+      <p class="page-intro">Compact snapshots of recent projects—click any card to see the deeper dive.</p>
 
       <div class="project-list">
 
         <!-- Project 1 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-1')" onkeydown="handleKeyOpen(event, 'modal-1')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Ethnography of Migrant Construction Workers</h2>
             <p class="project-meta">2016&ndash;2017 &middot; NIAS Bengaluru</p>
@@ -34,12 +35,14 @@
             <span class="pill">Ethnography</span>
             <span class="pill">Contextual Inquiry</span>
             <span class="pill">Workforce</span>
+            <span class="pill">Training Design</span>
+            <span class="pill">Risk</span>
+            <span class="pill">Systems Mapping</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-1')">Read more</button>
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-2')" onkeydown="handleKeyOpen(event, 'modal-2')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Labor &amp; Litigation Project (MA Thesis)</h2>
             <p class="project-meta">2017&ndash;2019 &middot; Quantitative</p>
@@ -49,13 +52,14 @@
           <div class="pill-row">
             <span class="pill">Data Engineering</span>
             <span class="pill">Legal Data</span>
+            <span class="pill">Longitudinal</span>
+            <span class="pill">Statistical Modeling</span>
             <span class="pill">Causal Analysis</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-2')">Read more</button>
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-3')" onkeydown="handleKeyOpen(event, 'modal-3')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Large-Scale Misinformation Field Experiment</h2>
             <p class="project-meta">2019&ndash;2025 &middot; India</p>
@@ -66,12 +70,13 @@
             <span class="pill">Field Experiment</span>
             <span class="pill">Causal Inference</span>
             <span class="pill">Product UX</span>
+            <span class="pill">Survey Design</span>
+            <span class="pill">Structural Modeling</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-3')">Read more</button>
         </article>
 
         <!-- Project 4 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-4')" onkeydown="handleKeyOpen(event, 'modal-4')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Survey Experiment on Accountability</h2>
             <p class="project-meta">2019&ndash;2025 &middot; Conjoint</p>
@@ -81,13 +86,14 @@
           <div class="pill-row">
             <span class="pill">Survey UX</span>
             <span class="pill">Conjoint</span>
+            <span class="pill">Experimental Design</span>
+            <span class="pill">JS/CSS</span>
             <span class="pill">Modeling</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-4')">Read more</button>
         </article>
 
         <!-- Project 5 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-5')" onkeydown="handleKeyOpen(event, 'modal-5')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Political Narratives Project</h2>
             <p class="project-meta">2019&ndash;2025 &middot; Qualitative</p>
@@ -97,13 +103,14 @@
           <div class="pill-row">
             <span class="pill">Ethnography</span>
             <span class="pill">Narrative</span>
+            <span class="pill">Behavioral Insights</span>
             <span class="pill">Trust</span>
+            <span class="pill">Communication</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-5')">Read more</button>
         </article>
 
         <!-- Project 6 -->
-        <article class="project-card">
+        <article class="project-card" onclick="openModal('modal-6')" onkeydown="handleKeyOpen(event, 'modal-6')" role="button" tabindex="0">
           <div class="project-head">
             <h2>Teaching Assessment Fellowship</h2>
             <p class="project-meta">2024&ndash;2025 &middot; Columbia CTL</p>
@@ -113,9 +120,10 @@
           <div class="pill-row">
             <span class="pill">Mixed Methods</span>
             <span class="pill">Evaluation</span>
+            <span class="pill">Stakeholders</span>
             <span class="pill">AI &amp; Pedagogy</span>
+            <span class="pill">Surveys</span>
           </div>
-          <button class="read-more-btn" onclick="openModal('modal-6')">Read more</button>
         </article>
 
       </div>
@@ -280,6 +288,13 @@
     function closeModal(id) {
       document.getElementById(id).style.display = 'none';
       document.body.classList.remove('modal-open');
+    }
+
+    function handleKeyOpen(event, id) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openModal(id);
+      }
     }
 
     window.onclick = function (event) {
