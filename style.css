@@ -80,9 +80,9 @@ img {
 }
 
 .nav-links a.is-active {
-  color: #0f62fe;
-  background: rgba(15, 98, 254, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(15, 98, 254, 0.2);
+  color: inherit;
+  background: transparent;
+  box-shadow: none;
 }
 
 .nav-toggle {
