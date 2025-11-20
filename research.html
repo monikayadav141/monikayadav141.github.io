@@ -19,7 +19,6 @@
     </header>
     <main>
       <h1>Research Portfolio</h1>
-      <p class="page-intro">Compact snapshots of recent projects—click any card to see the deeper dive.</p>
 
       <div class="project-list">
 
@@ -27,7 +26,7 @@
         <article class="project-card">
           <div class="project-head">
             <h2>Ethnography of Migrant Construction Workers</h2>
-            <p class="project-meta">2016–2017 · NIAS Bengaluru</p>
+            <p class="project-meta">2016&ndash;2017 &middot; NIAS Bengaluru</p>
           </div>
           <p class="project-summary">Twenty weeks of on-site ethnography mapping how migrant workers learn, share risk,
             and move through informal skill hierarchies; surfaced moments where training, safety, and mobility collide.</p>
@@ -42,15 +41,15 @@
         <!-- Project 2 -->
         <article class="project-card">
           <div class="project-head">
-            <h2>Teaching Assessment Fellowship</h2>
-            <p class="project-meta">2024–2025 · Columbia CTL</p>
+            <h2>Labor &amp; Litigation Project (MA Thesis)</h2>
+            <p class="project-meta">2017&ndash;2019 &middot; Quantitative</p>
           </div>
-          <p class="project-summary">Designed mixed-method assessments for faculty-led interventions and an AI learning
-            tool, translating survey, interview, and performance data into strategy recommendations for CTL leadership.</p>
+          <p class="project-summary">Built a 25-year panel by scraping federal court records and matching union election
+            data to model how labor ecosystems shape legal mobilization among non-union workers.</p>
           <div class="pill-row">
-            <span class="pill">Mixed Methods</span>
-            <span class="pill">Evaluation</span>
-            <span class="pill">AI & Pedagogy</span>
+            <span class="pill">Data Engineering</span>
+            <span class="pill">Legal Data</span>
+            <span class="pill">Causal Analysis</span>
           </div>
           <button class="read-more-btn" onclick="openModal('modal-2')">Read more</button>
         </article>
@@ -58,15 +57,15 @@
         <!-- Project 3 -->
         <article class="project-card">
           <div class="project-head">
-            <h2>Teaching Development Program</h2>
-            <p class="project-meta">2023–2024 · Columbia CTL</p>
+            <h2>Large-Scale Misinformation Field Experiment</h2>
+            <p class="project-meta">2019&ndash;2025 &middot; India</p>
           </div>
-          <p class="project-summary">Iterated on course design through inclusive pedagogy, active learning, and backward
-            design modules; folded peer and CTL feedback into redesigned assessments and participation structures.</p>
+          <p class="project-summary">Ran a multi-wave randomized field experiment (N≈1,300) testing mobile fact-checking
+            digests and modeled how repeated exposure improves truth discernment without inducing blanket skepticism.</p>
           <div class="pill-row">
-            <span class="pill">Pedagogy</span>
-            <span class="pill">Program Design</span>
-            <span class="pill">Assessment</span>
+            <span class="pill">Field Experiment</span>
+            <span class="pill">Causal Inference</span>
+            <span class="pill">Product UX</span>
           </div>
           <button class="read-more-btn" onclick="openModal('modal-3')">Read more</button>
         </article>
@@ -74,17 +73,49 @@
         <!-- Project 4 -->
         <article class="project-card">
           <div class="project-head">
-            <h2>Meaning-Making & Communication Studies</h2>
-            <p class="project-meta">Selected qualitative projects</p>
+            <h2>Survey Experiment on Accountability</h2>
+            <p class="project-meta">2019&ndash;2025 &middot; Conjoint</p>
           </div>
-          <p class="project-summary">Multi-site qualitative work on how people interpret messages and build trust in
-            everyday settings; translated narrative data into actionable communication and trust-building strategies.</p>
+          <p class="project-summary">Designed a multi-round conjoint survey with dynamic feedback to see how
+            accountability shifts resource-allocation choices; built custom logic in Qualtrics for a smooth task flow.</p>
           <div class="pill-row">
-            <span class="pill">Qualitative</span>
-            <span class="pill">Behavioral Insights</span>
-            <span class="pill">Communication</span>
+            <span class="pill">Survey UX</span>
+            <span class="pill">Conjoint</span>
+            <span class="pill">Modeling</span>
           </div>
           <button class="read-more-btn" onclick="openModal('modal-4')">Read more</button>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Political Narratives Project</h2>
+            <p class="project-meta">2019&ndash;2025 &middot; Qualitative</p>
+          </div>
+          <p class="project-summary">Comparative neighborhood ethnography and 40+ long interviews on how political stories
+            “come alive” in everyday conversations, shaping trust, resonance, and resistance.</p>
+          <div class="pill-row">
+            <span class="pill">Ethnography</span>
+            <span class="pill">Narrative</span>
+            <span class="pill">Trust</span>
+          </div>
+          <button class="read-more-btn" onclick="openModal('modal-5')">Read more</button>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Teaching Assessment Fellowship</h2>
+            <p class="project-meta">2024&ndash;2025 &middot; Columbia CTL</p>
+          </div>
+          <p class="project-summary">Mixed-methods evaluations of faculty-led interventions and an AI learning tool,
+            translating survey, interview, and performance data into strategy recommendations for CTL leadership.</p>
+          <div class="pill-row">
+            <span class="pill">Mixed Methods</span>
+            <span class="pill">Evaluation</span>
+            <span class="pill">AI &amp; Pedagogy</span>
+          </div>
+          <button class="read-more-btn" onclick="openModal('modal-6')">Read more</button>
         </article>
 
       </div>
@@ -121,6 +152,104 @@
   <div id="modal-2" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-2')">&times;</span>
+      <h2>Labor &amp; Litigation Project (MA Thesis)</h2>
+      <div class="project-details">
+        <h3>Methods</h3>
+        <p>Original dataset construction, scraping and integrating legal records, longitudinal analysis (1989&ndash;2016),
+          statistical modeling.</p>
+        <h3>What I Delivered</h3>
+        <ul>
+          <li>Scraped federal court records and matched them with NLRB election data to build a 25-year panel across 50
+            states.</li>
+          <li>Ran regression models to estimate how union density shapes legal mobilization among non-union workers.</li>
+          <li>Cleaned and validated tens of thousands of filings, turning noisy administrative data into analyzable signals.</li>
+        </ul>
+        <h3>Impact</h3>
+        <ul>
+          <li>Demonstrated a statistically significant link between labor ecosystems and individual legal action.</li>
+          <li>Showcased large-scale data wrangling and applied causal reasoning on messy real-world sources.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal-3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-3')">&times;</span>
+      <h2>Large-Scale Misinformation Field Experiment</h2>
+      <div class="project-details">
+        <h3>Methods</h3>
+        <p>Randomized field experiment (N≈1,300), structural modeling, survey design, mobile-based delivery.</p>
+        <h3>What I Delivered</h3>
+        <ul>
+          <li>Co-designed multi-wave interventions and weekly deployments for mobile fact-checking digests.</li>
+          <li>Led field ops and research interns; maintained engagement and data quality over months of rollouts.</li>
+          <li>Applied structural modeling to separate improved discernment from generalized skepticism.</li>
+        </ul>
+        <h3>Impact</h3>
+        <ul>
+          <li>One of the largest misinformation experiments in India; improved users' ability to evaluate online content.</li>
+          <li>Produced briefs for tech partners translating causal results into product and communication implications.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal-4" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-4')">&times;</span>
+      <h2>Survey Experiment on Accountability</h2>
+      <div class="project-details">
+        <h3>Methods</h3>
+        <p>Original survey experiment, multi-round conjoint design, treatment manipulation, Qualtrics programming
+          (JS/CSS), AMCE estimation.</p>
+        <h3>What I Delivered</h3>
+        <ul>
+          <li>Programmed a dynamic, multi-round conjoint with real-time scorecards and custom logic in Qualtrics.</li>
+          <li>Ran pilots, cleaned multi-round user-level data, and conducted AMCE and interaction modeling.</li>
+          <li>Documented pre-analysis plans and refined interface copy to keep tasks intuitive.</li>
+        </ul>
+        <h3>Impact</h3>
+        <ul>
+          <li>Revealed how accountability changes resource-allocation decisions and which attributes drive choices.</li>
+          <li>Improved task comprehension and completion rates through UX refinements to complex conjoint flows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div id="modal-5" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-5')">&times;</span>
+      <h2>Political Narratives Project</h2>
+      <div class="project-details">
+        <h3>Methods</h3>
+        <p>100+ hours participant observation, 41 long interviews, comparative neighborhood ethnography, discourse and
+          narrative analysis.</p>
+        <h3>What I Delivered</h3>
+        <ul>
+          <li>Studied how stories activate in real-time across class and gender contexts, capturing emotional and
+            contextual cues.</li>
+          <li>Analyzed conversational dynamics to see where messages resonate, stall, or get resisted.</li>
+          <li>Synthesized data into user segments and narrative activation patterns.</li>
+        </ul>
+        <h3>Impact</h3>
+        <ul>
+          <li>Generated insights on trust-building and message framing relevant to misinformation and communication
+            strategy.</li>
+          <li>Clarified how different groups process, reframe, or resist information for targeted engagement.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div id="modal-6" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-6')">&times;</span>
       <h2>Teaching Assessment Fellowship</h2>
       <div class="project-details">
         <h3>Methods</h3>
@@ -137,44 +266,6 @@
         <ul>
           <li>Guided leadership decisions on AI adoption timelines and safeguards.</li>
           <li>Produced briefs that shaped program redesign for stronger reach across STEM and humanities instructors.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div id="modal-3" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal('modal-3')">&times;</span>
-      <h2>Teaching Development Program</h2>
-      <div class="project-details">
-        <h3>Focus Areas</h3>
-        <ul>
-          <li>Inclusive pedagogy, active learning, backward design, assessment, teaching with AI.</li>
-        </ul>
-        <h3>Results</h3>
-        <ul>
-          <li>Rebuilt participation and grading structures based on peer and CTL feedback.</li>
-          <li>Implemented reflective exercises and accessibility checks to improve student engagement.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div id="modal-4" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal('modal-4')">&times;</span>
-      <h2>Meaning-Making & Communication Studies</h2>
-      <div class="project-details">
-        <h3>Focus</h3>
-        <p>Interviews and observation across multiple projects to understand how people construct meaning, interpret
-          messages, and build trust in everyday contexts.</p>
-        <h3>Sample Insights</h3>
-        <ul>
-          <li>Uncovered emotional and contextual cues that shape message comprehension, revealing failure points in clarity.</li>
-          <li>Developed user segments showing how different groups process or resist information, guiding tailored engagement.</li>
-          <li>Identified trust-building moments that improved framing and communication strategies.</li>
         </ul>
       </div>
     </div>
