@@ -552,10 +552,9 @@ main {
     width: 94%;
     padding: 20px;
   }
-
-  .placeholder-image {
-    height: 280px;
-    max-width: 320px;
+ 
+  .profile-photo {
+    max-width: 300px;
   }
 }
 
@@ -646,14 +645,8 @@ main {
    align-items: center;
  }
 
- .placeholder-image {
+ .profile-photo {
    width: 100%;
-   max-width: 400px;
-   height: 400px;
-   background-color: #f0f0f0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #999;
-   border-radius: 4px;
+   max-width: 380px;
+   box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
  }
