@@ -16,7 +16,7 @@ html {
   --bg-light: #f9f9f9;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 img {
   max-width: 100%;
@@ -25,12 +25,18 @@ img {
 }
 
 body {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background: #ffffff;
   color: #1E293B;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .container {
@@ -40,7 +46,7 @@ body {
 }
 
 .research-page .container {
-  --content-max: 1140px;
+  --content-max: 1240px;
 }
 
 .site-header {
@@ -179,7 +185,7 @@ main {
 }
 
 .meta-section h3 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -198,9 +204,9 @@ main {
 }
 
 .meta-list li {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #0F172A;
-  padding: 4px 10px;
+  padding: 2px 6px;
   background: #F0FDFA;
   border-radius: 5px;
   border: 1px solid #5EEAD4;
@@ -235,7 +241,7 @@ main {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 16px;
 }
 
@@ -775,31 +781,51 @@ main {
   margin: 0 0 5px 0;
   color: #222;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .organization {
   font-size: 1rem;
   color: #555;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .date {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.85rem;
+  color: #0F172A;
   white-space: nowrap;
   margin-left: 20px;
-  font-weight: 600;
-  background: #f0f0f0;
+  font-weight: 500;
+  background: #F0FDFA;
+  border: 1px solid #5EEAD4;
   padding: 4px 12px;
-  border-radius: 20px;
+  border-radius: 5px;
+}
+
+.teaching-award {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 500;
+  background: #F0FDFA;
+  border: 1px solid #5EEAD4;
+  padding: 4px 12px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .teaching-body h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
   font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .teaching-body ul {
@@ -812,6 +838,20 @@ main {
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.teaching-body p {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.teaching-body strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 /* Responsive adjustments for Timeline */
