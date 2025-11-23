@@ -221,16 +221,16 @@ body:has(.home-grid) main {
   font-size: 0.85rem;
   color: #ffffff;
   padding: 2px 8px;
-  background: var(--burgundy);
+  background: var(--theme-medium);
   border-radius: 5px;
-  border: 1px solid var(--burgundy);
+  border: 1px solid var(--theme-medium);
   font-weight: 500;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .meta-list li:hover {
-  background: var(--theme-medium);
-  border-color: var(--theme-medium);
+  background: var(--burgundy);
+  border-color: var(--burgundy);
 }
 
 /* Summary and Collapsible Description */
