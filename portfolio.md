@@ -59,9 +59,9 @@ Description:
 •	End-to-end ownership of a large quantitative research project, from data collection and cleaning to modeling and insight translation for non-technical audiences.
 
 5. Teaching Assessment Fellow, Columbia Center for Teaching and Learning
-Methods: Program evaluation, mixed-methods assessment (quant + qual), semi-structured interviews, survey analysis, feasibility study, AI tool evaluation
+Methods: Program evaluation, mixed-methods assessment (quant + qual),interviews, survey analysis, feasibility study, AI tool evaluation
 
-Core Skills: Evaluation research, impact analysis, generative AI assessment, qualitative & quantitative triangulation, translating research into recommendations, identifying user needs across diverse groups, developing evidence-based recommendations, communicating insights to institutional decision-makers.
+Core Skills: Evaluation research, impact analysis, developing evidence-based recommendations, communicating insights to institutional decision-makers.
 
 Description: 
 
@@ -77,7 +77,7 @@ Description:
 
 Methods: Ethnographic fieldwork, 40+ semi-structured interviews, 20 weeks of participant observation, multilingual fieldwork, qualitative coding
 
-Core Skills: Deep qualitative inquiry, contextual research, managing complex stakeholder environments, cultural insights, behavioral analysis
+Core Skills: Deep qualitative inquiry, contextual research, managing complex stakeholder environments, cultural insights
 Description:
 •	Conducted in-depth contextual inquiry in a high-stakes, multi-stakeholder environment to understand how workers learned, collaborated, and managed risk, uncovering unmet user needs and improving training efficiency and safety practices.
 •	Mapped end-to-end workflows at a complex worksite to spot friction in onboarding and peer-led training, highlighting hidden efficiency gaps and informing redesigned training steps that improved coordination and reduced rework.
