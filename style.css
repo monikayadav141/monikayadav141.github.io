@@ -143,6 +143,14 @@ main {
   padding: 24px 0;
 }
 
+/* Center home page content vertically */
+body:has(.home-grid) main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-open,
 .nav-open {
   overflow: hidden;
